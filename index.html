@@ -2,18 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Around The U.S.</title>
 </head>
 <body class="page">
-    <section class="header"></section>
-    <main class="content">
-        <section class="profile"></section>
-        <section class="elements"></section>
-    </main>
-    
-    <section class="footer"></section>
+    <div class="page__container">
+        <section class="header">
+            <img src="./images/header-image.png" alt="Around the U.S." class="header__logo">
+            <hr class="header__line">
+        </section>
+        <main class="content">
+            <section class="profile">
+                <img src="./images/profile-image.png" alt="" class="profile__avatar">
+                    <div class="profile__column">
+                        <div class="profile__row">
+                            <h2 class="profile__name">Jacques Cousteau</h2>
+                            <button class="profile__edit-btn"></button>
+                        </div>
+                        <p class="profile__description">Explorer</p> 
+                    </div>
+                <button class="profile__add-btn"></button>
+            </section>
+            <section class="elements">
+                <div class="elements__card">
+                    <img src="./images/yosemite.png" alt="River through Yosemite Valley" class="elements__card-image">
+                    <div class="elements__card-description">
+                        <h2 class="elements__card-title">Yosemite Valley</h2>
+                        <button class="elements__like-btn"></button>
+                    </div>
+                </div>
+                <div class="elements__card">
+                    <img src="./images/lake-louise.png" alt="Calm Lake Louise" class="elements__card-image">
+                    <div class="elements__card-description">
+                        <h2 class="elements__card-title">Lake Louise</h2>
+                        <button class="elements__like-btn"></button>
+                    </div>
+                </div>
+                <div class="elements__card">
+                    <img src="./images/bald-mountains.png" alt="Sunset Over the bald Mountains" class="elements__card-image">
+                    <div class="elements__card-description">
+                        <h2 class="elements__card-title">Bald Mountains</h2>
+                        <button class="elements__like-btn"></button>
+                    </div>
+                </div>
+                <div class="elements__card">
+                    <img src="./images/latemar.png" alt="Latemar at Night" class="elements__card-image">
+                    <div class="elements__card-description">
+                        <h2 class="elements__card-title">Latemar</h2>
+                        <button class="elements__like-btn"></button>
+                    </div>
+                </div>
+                <div class="elements__card">
+                    <img src="./images/vanoise.png" alt="Early Morning at Vanoise National Park" class="elements__card-image">
+                    <div class="elements__card-description">
+                        <h2 class="elements__card-title">Vanoise National Park</h2>
+                        <button class="elements__like-btn"></button>
+                    </div>
+                </div>
+                <div class="elements__card">
+                    <img src="./images/lago-di-braies.png" alt="Row Boats at Lago di Braies" class="elements__card-image">
+                    <div class="elements__card-description">
+                        <h2 class="elements__card-title">Lago di Braies</h2>
+                        <button class="elements__like-btn"></button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <section class="footer">
+            <h3 class="footer__text">&#169; 2020 Around the U.S.</h3>
+        </section>    
+    </div>
+
+    <div class="popup">
+        <div class="popup__container">
+            <button class="popup__close"></button>
+            <form action="#" method class="popup__form">
+                <h3 class="popup__title">Edit profile</h3>
+                <input type="text" name="name" class="popup__input" value="Jacques Cousteau">
+                <input type="text" name="description" class="popup__input" value="Explorer">
+                <button class="popup__save">Save</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
