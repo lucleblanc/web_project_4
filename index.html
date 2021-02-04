@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./fonts/fonts.css">
+    <!-- <link rel="stylesheet" href="./fonts/fonts.css">
     <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="./pages/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Around The U.S.</title>
 </head>
 <body class="page">
     <div class="page__container">
         <section class="header">
-            <img src="./images/header-image.png" alt="Around the U.S." class="header__logo">
+            <div class="header__logo"></div>
             <hr class="header__line">
         </section>
         <main class="content">
@@ -77,17 +78,17 @@
     </div>
 
     <div class="popup">
+        <button class="popup__close"></button>
         <div class="popup__container">
-            <button class="popup__close"></button>
             <form action="#" method class="popup__form">
                 <h3 class="popup__title">Edit profile</h3>
-                <input type="text" name="name" class="popup__input" value="Jacques Cousteau">
-                <input type="text" name="description" class="popup__input" value="Explorer">
+                <input type="text" name="name" class="popup__input popup__input_type_name" value="Jacques Cousteau">
+                <input type="text" name="description" class="popup__input popup__input_type_desc" value="Explorer">
                 <button class="popup__save">Save</button>
             </form>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>

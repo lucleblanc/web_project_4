@@ -1,0 +1,18 @@
+.elements__like-btn {
+    border: none;
+    background-color: #ffffff;
+    height: 19px;
+    width: 21px;
+    background-image: url('../../../images/like.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 18px
+}
+
+.elements__like-btn:hover {
+    background-image: url(../../../images/greyheart.png);
+}
+
+.elements__like-btn:active {
+    background-image: url(../../../images/blackheart.png);
+}

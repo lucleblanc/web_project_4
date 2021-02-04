@@ -1,0 +1,23 @@
+@import url('./_popup/header__logo_popup.css');
+
+.header__logo {
+    padding-bottom: 41px;
+    max-height: 33px;
+    max-width: 173px;
+    background-image: url(../../../images/header-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header {
+    padding-top: 28px;
+}
+
+@media screen and (max-width: 880px) {
+    .header__logo {
+        height: 24px;
+        max-width: 126px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
