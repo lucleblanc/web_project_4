@@ -20,4 +20,4 @@ My plan to improve the site is to continuously integrate new javascript features
 
 **Github Pages Link**
 
-* [Link to the project in Figma](https://lucleblanc.github.io/web_project_4/)
+* [Link to the website on Github Pages](https://lucleblanc.github.io/web_project_4/)
