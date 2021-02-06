@@ -1,7 +1,7 @@
 @import url('./__card-description/elements__card-description.css');
 @import url('./__card-title/elements__card-title.css');
 @import url('./__card/elements__card.css');
-@import url('./like-btn/elements__like-btn.css');
+@import url('./__like-btn/elements__like-btn.css');
 
 .elements {
     display: grid;
@@ -14,11 +14,7 @@
 
 @media screen and (max-width: 880px) {
     .elements {
-        display: grid;
-        justify-content: center;
-        grid-template-rows: repeat(2, 361px);
         grid-template-columns: repeat(1, 282px);
-        grid-gap: 20px 17px;
         margin-top: 36px;
     
     }

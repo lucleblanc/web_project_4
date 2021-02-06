@@ -5,30 +5,30 @@ const nameInput = document.querySelector('.popup__input_type_name');
 const descInput = document.querySelector('.popup__input_type_desc');
 const profileName = document.querySelector('.profile__name');
 const profileDesc = document.querySelector('.profile__description');
-// const likeButton = document.querySelector('.elements__like-btn');
+const popup = document.querySelector('.popup');
+const openPopup = document.querySelector('.popup__open')
 
-// document.querySelectorAll('.elements__like-btn').forEach(item => {
-//     item.addEventListener('click', event => {
-//     classList.toggle('elements__like-btn_liked')
-//     })
-//   })
 
-form.addEventListener('submit', (event) => {
+function togglePopup() {
+    popup.classList.toggle('popup__open'); 
+}
+
+if (openPopup) {
+    nameInput.value = profileName.textContent;
+    descInput.value = profileDesc.textContent;
+}
+
+editButton.addEventListener('click', togglePopup);
+closeButton.addEventListener('click', togglePopup);
+
+function submitForm(event) {
     event.preventDefault()
     profileName.textContent = nameInput.value;
     profileDesc.textContent = descInput.value;
     togglePopup()
-    
-})
-
-function togglePopup() {
-    const popup = document.querySelector('.popup');
-    popup.classList.toggle('popup__open'); 
-    const header = document.querySelector('.header__logo')
-    header.classList.toggle('header__logo_popup')
 }
 
-editButton.addEventListener('click', togglePopup) 
-closeButton.addEventListener('click', togglePopup) 
+form.addEventListener('submit', submitForm);
+
 
 

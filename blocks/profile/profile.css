@@ -8,7 +8,7 @@
 .profile {
     color: #ffffff;
     display: flex;
-    font-family: Inter;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
     font-style: normal;
     align-items: center;
     margin-top: 36.25px;

@@ -10,9 +10,10 @@
 }
 
 .elements__like-btn:hover {
-    background-image: url(../../../images/greyheart.png);
+    opacity: 0.7;
+    cursor: pointer;
 }
 
 .elements__like-btn:active {
-    background-image: url(../../../images/blackheart.png);
+    background-image: url(../../../images/blackheart.svg);
 }
