@@ -6,16 +6,16 @@ const descInput = document.querySelector('.popup__input_type_desc');
 const profileName = document.querySelector('.profile__name');
 const profileDesc = document.querySelector('.profile__description');
 const popup = document.querySelector('.popup');
-const openPopup = document.querySelector('.popup__open')
+const openPopup = document.querySelector('.popup_open');
 
 
 function togglePopup() {
-    popup.classList.toggle('popup__open'); 
-}
+    popup.classList.toggle('popup_open');
 
-if (openPopup) {
-    nameInput.value = profileName.textContent;
-    descInput.value = profileDesc.textContent;
+    if (popup.classList.contains('popup_open')) {
+        nameInput.value = profileName.textContent;
+        descInput.value = profileDesc.textContent;
+    }
 }
 
 editButton.addEventListener('click', togglePopup);
