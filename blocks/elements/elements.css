@@ -2,20 +2,24 @@
 @import url('./__card-title/elements__card-title.css');
 @import url('./__card/elements__card.css');
 @import url('./__like-btn/elements__like-btn.css');
+@import url('./__card-image/elements__card-image.css');
+@import url('./__delete-btn/elements__delete-btn.css');
+@import url('./__card-list/elements__card-list.css');
+@import url('./__card-img/elements__card-img.css');
 
-.elements {
+/* .elements {
     display: grid;
     justify-content: center;
     grid-template-rows: repeat(2, 361px);
     grid-template-columns: repeat(3, 282px);
     grid-gap: 20px 17px;
     margin-top: 50px;
-}
+} */
 
-@media screen and (max-width: 880px) {
+/* @media screen and (max-width: 880px) {
     .elements {
         grid-template-columns: repeat(1, 282px);
         margin-top: 36px;
     
     }
-}
+} */

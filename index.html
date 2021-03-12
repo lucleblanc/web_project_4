@@ -24,48 +24,8 @@
                 <button class="profile__add-btn" type="button"></button>
             </section>
             <section class="elements">
-                <div class="elements__card">
-                    <img src="./images/yosemite.png" alt="River through Yosemite Valley" class="elements__card-image">
-                    <div class="elements__card-description">
-                        <h2 class="elements__card-title">Yosemite Valley</h2>
-                        <button class="elements__like-btn" type="button"></button>
-                    </div>
-                </div>
-                <div class="elements__card">
-                    <img src="./images/lake-louise.png" alt="Calm Lake Louise" class="elements__card-image">
-                    <div class="elements__card-description">
-                        <h2 class="elements__card-title">Lake Louise</h2>
-                        <button class="elements__like-btn" type="button"></button>
-                    </div>
-                </div>
-                <div class="elements__card">
-                    <img src="./images/bald-mountains.png" alt="Sunset Over the bald Mountains" class="elements__card-image">
-                    <div class="elements__card-description">
-                        <h2 class="elements__card-title">Bald Mountains</h2>
-                        <button class="elements__like-btn" type="button"></button>
-                    </div>
-                </div>
-                <div class="elements__card">
-                    <img src="./images/latemar.png" alt="Latemar at Night" class="elements__card-image">
-                    <div class="elements__card-description">
-                        <h2 class="elements__card-title">Latemar</h2>
-                        <button class="elements__like-btn" type="button"></button>
-                    </div>
-                </div>
-                <div class="elements__card">
-                    <img src="./images/vanoise.png" alt="Early Morning at Vanoise National Park" class="elements__card-image">
-                    <div class="elements__card-description">
-                        <h2 class="elements__card-title">Vanoise National Park</h2>
-                        <button class="elements__like-btn" type="button"></button>
-                    </div>
-                </div>
-                <div class="elements__card">
-                    <img src="./images/lago-di-braies.png" alt="Row Boats at Lago di Braies" class="elements__card-image">
-                    <div class="elements__card-description">
-                        <h2 class="elements__card-title">Lago di Braies</h2>
-                        <button class="elements__like-btn" type="button"></button>
-                    </div>
-                </div>
+                <ul class="elements__card-list">
+                </ul>
             </section>
         </main>
         <footer class="footer">
@@ -73,10 +33,10 @@
         </footer>    
     </div>
 
-    <div class="popup">
+    <div class="popup popup__type_edit-profile">
         <button class="popup__close" type="button"></button>
         <div class="popup__container">
-            <form action="#" method="post" class="popup__form" name="profile-form">
+            <form action="#" method="post" class="popup__form popup__form_type_edit-profile" name="profile-form">
                 <h3 class="popup__title">Edit profile</h3>
                 <input type="text" name="name" class="popup__input popup__input_type_name" value="Jacques Cousteau">
                 <input type="text" name="description" class="popup__input popup__input_type_desc" value="Explorer">
@@ -84,6 +44,40 @@
             </form>
         </div>
     </div>
+
+    <div class="popup popup__type_add-card">
+        <button class="popup__close" type="button"></button>
+        <div class="popup__container">
+            <form action="#" method="post" class="popup__form popup__form_type_add-card" name="profile-form">
+                <h3 class="popup__title">New Place</h3>
+                <input type="text" name="name" class="popup__input popup__input_type_card-title" placeholder="Title">
+                <input type="url" name="description" class="popup__input popup__input_card-url" placeholder="Image Link">
+                <button class="popup__save" type="submit">Create</button>
+            </form>
+        </div>
+    </div>
+    <div class="popup popup__type_image">
+        <div class="popup__image-ctr">
+            <button class="popup__img-close" type="button"></button>
+            <figure class="popup__figure">
+                <img class="popup__image" src="" alt="">
+                <figcaption class="popup__image-title"></figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <template id="card-template">
+            <li class="elements__card">
+                <div class="elements__card-image">
+                    <button type="button" class="elements__delete-btn"></button>
+                    <img src="#" alt="" class="elements__card-img">
+                </div>
+                <div class="elements__card-description">
+                    <h2 class="elements__card-title"></h2>
+                    <button class="elements__like-btn" type="button"></button>
+                </div>
+            </li> 
+    </template>
 
     <script src="./script.js"></script>
 </body>

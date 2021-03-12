@@ -4,10 +4,16 @@
 @import url('./__input/popup__input.css');
 @import url('./__save/popup__save.css');
 @import url('./__title/popup__title.css');
+@import url('./__type/popup__type.css');
+@import url('./__image/popup__image.css');
+@import url('./__image-title/popup__image-title.css');
+@import url('./__img-ctr/popup__img-ctr.css');
+@import url('./__img-close/popup__img-close.css');
 
 
 .popup {
-    display: none;
+    /* display: none; */
+    visibility: hidden;
     height: 100%;
     width: 100%;
     position: fixed;
@@ -20,6 +26,8 @@
     font-weight: normal;
     flex-direction: column;
     background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: visibility 0s linear 0.5s, opacity 0.5s linear;
     
 }
 

@@ -1,0 +1,30 @@
+.popup__img-close {
+    min-height: 40px;
+    width: 40px;
+    background: rgba(0, 0, 0, 0);
+    background-image: url('../../../images/close.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    position: absolute;
+    right: 0px;
+    top: -20px;
+    margin: 0;
+    padding: 0;
+}
+
+.popup__img-close:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 880px) {
+    .popup__img-close {
+        min-height: 30px;
+        width: 30px;
+        top: -15px;
+        right: 0px;
+    
+    }
+}
+
